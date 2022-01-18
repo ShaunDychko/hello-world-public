@@ -6,5 +6,12 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-gatsby-cloud`,
+      options: {
+        mergeSecurityHeaders: false,
+      },
+    },
+  ],
 }
