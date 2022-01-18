@@ -9,4 +9,9 @@ exports.onPreBootstrap = ({ actions }) => {
     fromPath: "/packages/*",
     toPath: "/plugins/*",
   })
+  createRedirect({
+    fromPath: "/get_external_api/*",
+    toPath: "https://example.com/*",
+    statusCode: 200,
+  })
 }
